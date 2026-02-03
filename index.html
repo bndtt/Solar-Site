@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarQuote | Instant Solar Estimates Powered by AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">☀️</span>
+                <span class="logo-text">SolarQuote</span>
+            </a>
+            <div class="nav-links">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#faq">FAQ</a>
+                <a href="#quote" class="btn btn-primary">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get Your Solar Quote in <span class="highlight">60 Seconds</span></h1>
+                <p class="hero-subtitle">Our AI analyzes your home and energy usage to deliver an instant, personalized solar estimate. No salespeople, no pressure, no waiting.</p>
+                <a href="#quote" class="btn btn-large btn-primary">Get Free Quote →</a>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-number">30%</span><span class="stat-label">Federal Tax Credit</span></div>
+                    <div class="stat"><span class="stat-number">$20k+</span><span class="stat-label">Avg. 25yr Savings</span></div>
+                    <div class="stat"><span class="stat-number">60s</span><span class="stat-label">Quote Time</span></div>
+                </div>
+            </div>
+            <div class="hero-image"><div class="hero-visual"><div class="house-icon">🏠</div><div class="sun-rays"></div></div></div>
+        </div>
+    </section>
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p class="section-subtitle">Three simple steps to your personalized solar quote</p>
+            <div class="steps">
+                <div class="step"><div class="step-number">1</div><div class="step-icon">📍</div><h3>Enter Your Address</h3><p>Tell us where you live so we can assess your solar potential based on location and climate.</p></div>
+                <div class="step"><div class="step-number">2</div><div class="step-icon">💡</div><h3>Share Your Usage</h3><p>Enter your monthly electricity bill so we can size your system perfectly for your needs.</p></div>
+                <div class="step"><div class="step-number">3</div><div class="step-icon">📊</div><h3>Get Your Quote</h3><p>Our AI instantly calculates your savings, system size, and provides a detailed quote.</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2>Why Go Solar?</h2>
+            <p class="section-subtitle">Join millions of homeowners saving money and the planet</p>
+            <div class="benefits-grid">
+                <div class="benefit-card"><div class="benefit-icon">💰</div><h3>Slash Your Bills</h3><p>Reduce or eliminate your electricity bill. Most homeowners save $100-200+ per month.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">🏦</div><h3>30% Tax Credit</h3><p>The federal solar tax credit lets you deduct 30% of installation costs from your taxes.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">📈</div><h3>Increase Home Value</h3><p>Solar panels can increase your home's value by an average of 4.1%.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">🌍</div><h3>Help the Planet</h3><p>A typical system offsets 100,000+ lbs of CO2 over its lifetime — like planting 2,500 trees.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">🔒</div><h3>Energy Independence</h3><p>Protect yourself from rising utility rates and grid outages with battery backup.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">⚡</div><h3>25-Year Warranty</h3><p>Modern panels are built to last with performance guarantees for 25+ years.</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <div class="quote-container">
+                <div class="quote-header"><h2>Get Your Free Solar Quote</h2><p>Takes less than 60 seconds. No credit card required.</p></div>
+                <form id="quoteForm" class="quote-form">
+                    <div class="form-step active" data-step="1">
+                        <div class="form-group"><label for="address">What's your address?</label><input type="text" id="address" name="address" placeholder="123 Main St, City, State ZIP" required><small>We use this to estimate your solar potential</small></div>
+                        <button type="button" class="btn btn-primary btn-full next-step">Continue →</button>
+                    </div>
+                    <div class="form-step" data-step="2">
+                        <div class="form-group"><label for="bill">What's your average monthly electricity bill?</label><div class="input-with-prefix"><span class="prefix">$</span><input type="number" id="bill" name="bill" placeholder="150" min="0" max="2000" required></div><small>Check your utility bill — an estimate is fine</small></div>
+                        <div class="form-buttons"><button type="button" class="btn btn-secondary prev-step">← Back</button><button type="button" class="btn btn-primary next-step">Continue →</button></div>
+                    </div>
+                    <div class="form-step" data-step="3">
+                        <div class="form-group"><label>Are you interested in battery backup?</label><div class="radio-group"><label class="radio-option"><input type="radio" name="battery" value="yes"><span class="radio-label">Yes, I want backup power</span></label><label class="radio-option"><input type="radio" name="battery" value="no" checked><span class="radio-label">No, just solar panels</span></label><label class="radio-option"><input type="radio" name="battery" value="maybe"><span class="radio-label">Not sure yet</span></label></div></div>
+                        <div class="form-group"><label>Do you have an electric vehicle (or planning to get one)?</label><div class="radio-group"><label class="radio-option"><input type="radio" name="ev" value="yes"><span class="radio-label">Yes</span></label><label class="radio-option"><input type="radio" name="ev" value="no" checked><span class="radio-label">No</span></label><label class="radio-option"><input type="radio" name="ev" value="planning"><span class="radio-label">Planning to soon</span></label></div></div>
+                        <div class="form-buttons"><button type="button" class="btn btn-secondary prev-step">← Back</button><button type="button" class="btn btn-primary next-step">Continue →</button></div>
+                    </div>
+                    <div class="form-step" data-step="4">
+                        <div class="form-group"><label for="name">Your name</label><input type="text" id="name" name="name" placeholder="John Smith" required></div>
+                        <div class="form-group"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="john@example.com" required><small>We'll send your detailed quote here</small></div>
+                        <div class="form-group"><label for="phone">Phone number (optional)</label><input type="tel" id="phone" name="phone" placeholder="(555) 123-4567"></div>
+                        <div class="form-buttons"><button type="button" class="btn btn-secondary prev-step">← Back</button><button type="submit" class="btn btn-primary">Get My Quote ☀️</button></div>
+                    </div>
+                </form>
+                <div class="progress-bar"><div class="progress" style="width: 25%"></div></div>
+                <div class="step-indicators"><span class="indicator active">Address</span><span class="indicator">Usage</span><span class="indicator">Preferences</span><span class="indicator">Contact</span></div>
+            </div>
+        </div>
+    </section>
+    <section id="results" class="results-section" style="display: none;">
+        <div class="container">
+            <div class="results-container">
+                <div class="results-header"><h2>Your Solar Quote</h2><p>Based on your information, here's what we recommend</p></div>
+                <div class="results-content">
+                    <div class="result-card main-result"><div class="result-label">Estimated System Size</div><div class="result-value" id="systemSize">8.4 kW</div><div class="result-detail" id="panelCount">21 panels</div></div>
+                    <div class="results-grid">
+                        <div class="result-card"><div class="result-label">Estimated Cost</div><div class="result-value" id="totalCost">$21,000</div><div class="result-detail">Before incentives</div></div>
+                        <div class="result-card highlight"><div class="result-label">After Tax Credit</div><div class="result-value" id="afterCredit">$14,700</div><div class="result-detail">30% federal credit</div></div>
+                        <div class="result-card"><div class="result-label">Monthly Savings</div><div class="result-value" id="monthlySavings">$145</div><div class="result-detail">On electricity</div></div>
+                        <div class="result-card"><div class="result-label">25-Year Savings</div><div class="result-value" id="totalSavings">$52,000</div><div class="result-detail">Net profit</div></div>
+                    </div>
+                    <div class="payback-info"><div class="payback-label">Estimated Payback Period</div><div class="payback-bar"><div class="payback-progress" id="paybackProgress" style="width: 32%"></div><span class="payback-marker" id="paybackMarker" style="left: 32%">8 years</span></div><div class="payback-scale"><span>0</span><span>25 years</span></div></div>
+                    <div class="ai-summary" id="aiSummary"><h3>💡 AI Analysis</h3><p>Loading personalized recommendations...</p></div>
+                    <div class="results-actions"><button class="btn btn-primary btn-large" onclick="window.print()">Download Quote (PDF)</button><button class="btn btn-secondary btn-large" onclick="openChat()">Ask Questions</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item"><button class="faq-question">How accurate is the AI quote?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Our AI provides estimates based on your location, electricity usage, and typical roof characteristics. For a final quote, we'll need to verify details about your specific roof. Most estimates are within 10-15% of final pricing.</p></div></div>
+                <div class="faq-item"><button class="faq-question">What's the 30% federal tax credit?<span class="faq-icon">+</span></button><div class="faq-answer"><p>The federal solar Investment Tax Credit (ITC) allows you to deduct 30% of your solar installation costs from your federal taxes. For a $20,000 system, that's $6,000 back. This credit is available through 2032.</p></div></div>
+                <div class="faq-item"><button class="faq-question">How long does installation take?<span class="faq-icon">+</span></button><div class="faq-answer"><p>The actual installation typically takes 1-3 days. However, the full process from signing to switch-on usually takes 2-3 months due to permits, utility approval, and scheduling.</p></div></div>
+                <div class="faq-item"><button class="faq-question">Do I need a new roof?<span class="faq-icon">+</span></button><div class="faq-answer"><p>If your roof is less than 10 years old, you're probably fine. If it's older, we recommend getting it inspected first. Solar panels last 25+ years, so you want a roof that'll last just as long.</p></div></div>
+                <div class="faq-item"><button class="faq-question">What financing options are available?<span class="faq-icon">+</span></button><div class="faq-answer"><p>We offer several options: cash purchase (best value), solar loans (own your system, $0 down), leases (lowest monthly payment), and PPAs (pay for power, not panels). We'll help you find what works best.</p></div></div>
+                <div class="faq-item"><button class="faq-question">What happens on cloudy days or at night?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Your panels still produce some power on cloudy days (just less). At night, you draw from the grid. With net metering, the excess power you produce during the day credits your account for nighttime use. Add a battery to store power for outages or peak rates.</p></div></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand"><span class="logo-icon">☀️</span><span class="logo-text">SolarQuote</span><p>Making solar simple with AI.</p></div>
+                <div class="footer-links"><a href="#how-it-works">How It Works</a><a href="#benefits">Benefits</a><a href="#faq">FAQ</a><a href="#quote">Get Quote</a></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 SolarQuote. Made with AI.</p></div>
+        </div>
+    </footer>
+    <div id="chatWidget" class="chat-widget">
+        <button class="chat-toggle" onclick="toggleChat()"><span class="chat-icon">💬</span><span class="chat-label">Ask AI</span></button>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header"><span>☀️ Solar Assistant</span><button onclick="toggleChat()">×</button></div>
+            <div class="chat-messages" id="chatMessages"><div class="message bot"><p>Hi! I'm your solar assistant. Ask me anything about solar panels, savings, installation, or your quote!</p></div></div>
+            <div class="chat-input"><input type="text" id="chatInput" placeholder="Type your question..." onkeypress="handleChatKeypress(event)"><button onclick="sendMessage()">→</button></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+Then tell me when done — 2 more files to go!
